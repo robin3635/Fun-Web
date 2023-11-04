@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+    transition: 0.8s ease-in;
+}
+
+body.dark {
+    background-color: #fff;
+    color: #222;
+    transition: 0.8s ease-in;
+}
+
+.white {
+    color: #e7e0e0;
+}
+
+.padd-all {
+    padding: 0 8%;
+}
+
+.mar-all {
+    margin: 8% 0;
+}
+
+/* Navbar section  */
+
+header {
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #8f8080;
+}
+
+.nav {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .logo{
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #dcc3a1;
+}
+
+.nav > i {
+    display: none;
+    cursor: pointer;
+}
+
+
+.navlist {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.navlist li a {
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px 20px;
+    border-bottom: 2px solid transparent;
+    color: #d8dfdc;
+    transition: .3s ease;
+}
+
+
+.navlist li a:hover, .navlist li a.active {
+    color: #9393d7;
+    border-bottom: 2px solid #0000ff;
+}
+
+.navlist > i {
+    display: none;
+    cursor: pointer;
+}
+
+/* clock section  */
+
+.clock {
+    width: 100%;
+    display: flex;
+    margin: 20% 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ti-div {
+    display: flex;
+    margin: 20px 0;
+    box-shadow: 0px 2px 4px gray;
+}
+
+.clock > .ti-div .time {
+    width: 200px;
+    height: 40px;
+    margin-right: 10px;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.clock > .theme {
+    margin-top: 50px;
+    padding: 10px 30px;
+    background-color: #222;
+    font-size: 1em;
+    color: #fff;
+    border: none;
+    outline: none;
+    border-radius: .3rem;
+    cursor: pointer;
+    box-shadow: 1px 2px 4px rgba(255, 255, 255, 0.4);
+}
+
+/* Image Container  */
+
+.slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider button {
+    padding: 10px 20px;
+    background-color: #999cb4;
+    outline: none;
+    border: none;
+    color: white;
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+.img-container {
+    width: 500px;
+    height: 300px;
+    margin: 50px auto;
+    position: relative;
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
+    overflow: hidden;
+}
+
+.img-container > img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 1s;
+}
+
+/* Quize Section  */
+
+.Quize {
+    width: 100%;
+    text-align: center;
+}
+
+.quize-app {
+    width: 350px;
+    margin: 20px auto;
+    text-align: start;
+    padding: 20px;
+    border-radius: .5rem;
+    box-shadow: 0px 0px 10px gray;
+}
+
+.quize-app > .quize-option {
+    width: 100%;
+    margin: 25px 0;
+}
+
+.quize-app > button {
+    width: 100%;
+    padding: 5px 10px;
+    border-radius: 1rem;
+    outline: none;
+    border: none;
+    background-color: #5f5fe4;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* todo section  */
+
+.todo > h2 {
+    text-align: center;
+}
+
+.toDoList {
+    width: 350px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: .5rem;
+    box-shadow: 0px 0px 10px gray;
+}
+
+.toDoList > .inptToDo {
+    width: 100%;
+    padding: 8px 10px;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 10px gray;
+}
+
+.toDoList > .li-todo {
+    list-style: decimal;
+    font-size: 0.9em;
+    padding: 20px;
+}
+
+.toDoList > .li-todo li {
+    padding-bottom: 30px;
+    font-weight: 600;
+    position: relative;
+    cursor: pointer;
+}
+
+.toDoList > .li-todo li i {
+    position: absolute;
+    top: 3px;
+    right: 0px;
+    cursor: pointer;
+}
+
+.li-todo li.done {
+    text-decoration: line-through;
+    color: #5f5fe4;
+}
+
+/* random colour  */
+
+.random-color {
+    padding: 8% 0;
+    border-radius: 1rem;
+    transition: .5s ease;
+}
+
+.ran-colour {
+    width: 250px;
+    height: 120px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.8rem;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.colour {
+    font-size: 1em;
+    font-weight: 600;
+    padding-bottom: 20px;
+    color: green;
+    cursor: pointer;
+}
+
+.ran-colour button {
+    border-radius: 1rem;
+    padding: 5px 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #5f5fe4;
+    color: #fff;
+}
+
+/* footer section  */
+
+.date > h2 {
+    text-align: center;
+}
+
+.date > .D-M-Y {
+    width: 200px;
+    height: 40px;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 2px 4px gray;
+    letter-spacing: 2px;
+}
+
+.date > .D-M-Y > sup {
+    font-size: .5em;
+}
+
+/* footDes section  */
+
+.footDes {
+    text-align: center;
+    font-size: .8em;
+    background-color: #8f8080;
+    padding: 15px;
+}
+
+/* responsive view  */
+
+@media (max-width:850px) {
+    .navlist {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        width: 300px;
+        height: 100vh;
+        background-color: #8f8080;
+        box-shadow: 0px 0px 50px rgba(34, 34, 34, 0.1);
+        transition: .3s;
+    }
+
+    .navlist > i {
+        display: block;
+        position: absolute;
+        bottom: 100px;
+
+    }
+
+    .navlist.show {
+        right: 0;
+    }
+
+    .navlist li {
+        line-height: 50px;
+    }
+
+    .nav i {
+        display: block;
+    }
+}
